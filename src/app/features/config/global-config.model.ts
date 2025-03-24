@@ -123,8 +123,11 @@ export type SyncConfig = Readonly<{
   syncProvider: LegacySyncProvider | null;
   syncInterval: number;
 
+  /* @deprecated */
   dropboxSync: DropboxSyncConfig;
+  /* @deprecated */
   webDav: WebDavConfig;
+  /* @deprecated */
   localFileSync: LocalFileSyncConfig;
 }>;
 export type LegacyCalendarIntegrationConfig = Readonly<{
